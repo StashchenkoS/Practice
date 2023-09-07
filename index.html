@@ -35,7 +35,7 @@
         <div class="container">
             <h1>Giraffe Club</h1>
             <p>Офіційний сертифікований центр підготовки до міжнародних екзаменів Cambrige</p>
-            <button>Отримати консультацію</button>
+            <button class="btn btn-popup" id="btn-consultation">Отримати консультацію</button>
         </div>
     </header>
     <section style="height: 500px;"></section>
@@ -56,15 +56,26 @@
                     <li>Літній табір</li>
                 </ol>
             </div>
-            <button>Залишити заявку</button>
+            <button class="btn btn-popup" id="btn-request">Залишити заявку</button>
         </div>
     </section>
 
     <section style="height: 500px;"></section>
 
-    <div class="overlay">
+    <div class="overlay" id="consultation">
         <div class="content">
-            
+            <h3>Отримай консультацію</h3>
+            <input type="text"> <br>
+            <input type="tel"> <br>
+            <input type="submit" value="Надіслати">
+        </div>
+    </div>
+    <div class="overlay" id="request">
+        <div class="content">
+            <h3>Залишити заявку</h3>
+            <input type="text"> <br>
+            <input type="tel"> <br>
+            <input type="submit" value="Надіслати">
         </div>
     </div>
 

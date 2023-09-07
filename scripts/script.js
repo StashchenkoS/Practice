@@ -16,7 +16,31 @@ document.addEventListener('DOMContentLoaded', function (){
         menu.style.background = "#DF803E";
     })
 
-    
+    class Popup{
+        constructor(selectorBtn, selectorPopup){
+            this.btn = document.querySelector(`#${selectorBtn}`)
+            this.overlay = document.querySelector(`#${selectorPopup}`)
+
+            this.btn.addEventListener('click', ()=>{
+                this.showPopup();
+            })
+
+            this.overlay.addEventListener('click',()=>{
+                this.hidePopup();
+            })
+        }
+        showPopup(){
+            this.overlay.classList.add('active');
+        }
+
+        hidePopup(){
+            this.overlay.classList.remove('active');
+
+        }
+    }
+
+    const consultationPopup = new Popup('btn-consultation', 'consultation');
+    const requestPopup = new Popup('btn-request', 'request');
 
 
 
