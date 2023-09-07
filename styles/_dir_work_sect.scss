@@ -1,0 +1,7 @@
+.direction_works{
+    background-color: $backgroundPrimary;
+    & + b{
+        color: #FCFCFC;
+    }
+
+}
