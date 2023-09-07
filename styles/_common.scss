@@ -1,0 +1,29 @@
+
+
+$backgroundPrimary: #DF803E;
+$textColorPrimary: #000;
+
+
+body {
+    font-family: 'BookmanOldStyle';
+    color: $textColorPrimary;
+    height: 1000px;
+}
+h1 {
+    font-size: 51px;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+h3 {
+    font-size: 34px;
+}
+
+.container{
+    border: 1px solid #000;
+    margin: 0 auto;
+    width: 320px;
+}
