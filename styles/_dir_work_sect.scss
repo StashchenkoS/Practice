@@ -1,7 +1,26 @@
 .direction_works{
     background-color: $backgroundPrimary;
-    & + b{
+    b{
         color: #FCFCFC;
     }
+    ol{
+        li{
+            position: relative;
+            padding: 20px 0;
+            padding-left: 40px;
+            &::before{
+                counter-increment: numbers;
+                content: '0'counter(numbers);
+                position: absolute;
+                top: 50%;
+                left: 0px;
+                transform: translateY(-50%);
+                border: 2px solid #000;
+                border-radius: 50%;
+                width: 30px;
+                height: 30px;
 
+            }
+        }
+    }
 }
