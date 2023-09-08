@@ -8,6 +8,9 @@ body {
     font-family: 'BookmanOldStyle';
     color: $textColorPrimary;
     height: 1000px;
+    min-width: 360px;
+    max-width: 1920px;
+    margin: 0 auto;
 }
 h1 {
     font-size: 51px;
@@ -25,5 +28,6 @@ h3 {
 .container{
     border: 1px solid #000;
     margin: 0 auto;
-    width: 320px;
+    width: 90%;
+    max-width: 1690px;
 }

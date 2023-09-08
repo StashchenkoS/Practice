@@ -1,11 +1,6 @@
-.close-menu {
-    display: none;
-}
-
 menu {
     background-color: $backgroundPrimary;
     border-bottom: 1px solid #FFF;
-    // padding: 10px;
 }
 
 .burger_btns {
@@ -49,7 +44,7 @@ menu {
 
     }
 
-    &+nav {
+    & + nav {
         display: none;
         background-image: url(../images/pict.png);
         background-repeat: no-repeat;
@@ -68,7 +63,6 @@ menu {
     }
 
     &.active {
-        background-color: #FFF;
         justify-content: space-between;
         border-bottom: 1px solid $backgroundPrimary;
 
@@ -88,16 +82,63 @@ menu {
     .burger_btns {
         display: none;
 
-
-        &+nav,
+        & + nav,
         &.active+nav {
             display: flex;
             justify-content: center;
-            background-image: none
-            
+            background-image: none;
+            padding-bottom: 0;
+            margin: 0;
+            align-items: center;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 300;
 
 
         }
     }
 
+    .contacts {
+        display: flex;
+        align-items: center;
+
+        a.icon {
+            width: 40px;
+            height: 40px;
+            margin-left: 24px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: bottom;
+
+            &.phone {
+                background-image: url('../images/icons/телефон.svg');
+            }
+
+            &.location {
+                background-image: url('../images/icons/локація.svg');
+            }
+
+            &.email {
+                background-image: url('../images/icons/пошта.svg');
+            }
+        }
+
+    }
+
+    menu .container {
+        display: flex;
+        justify-content: space-between;
+        height: 71px;
+    }
+  
+}
+@media (min-width: 1200px) {
+    .burger_btns {
+        display: none;
+
+        & + nav,
+        &.active+nav {
+            font-size: 20px;
+        }
+    }
 }

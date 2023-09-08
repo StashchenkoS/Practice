@@ -25,7 +25,8 @@ document.addEventListener('DOMContentLoaded', function (){
                 this.showPopup();
             })
 
-            this.overlay.addEventListener('click',()=>{
+            this.overlay.addEventListener('click',(e)=>{
+                if (e.target.className == "overlay active")
                 this.hidePopup();
             })
         }
