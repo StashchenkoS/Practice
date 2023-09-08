@@ -78,7 +78,7 @@ menu {
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
     .burger_btns {
         display: none;
 
@@ -90,7 +90,7 @@ menu {
             padding-bottom: 0;
             margin: 0;
             align-items: center;
-            font-size: 15px;
+            font-size: 26px;
             font-style: normal;
             font-weight: 300;
 
@@ -131,14 +131,4 @@ menu {
         height: 71px;
     }
   
-}
-@media (min-width: 1200px) {
-    .burger_btns {
-        display: none;
-
-        & + nav,
-        &.active+nav {
-            font-size: 20px;
-        }
-    }
 }

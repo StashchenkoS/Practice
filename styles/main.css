@@ -103,7 +103,7 @@ menu {
   display: block;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .burger_btns {
     display: none;
   }
@@ -114,7 +114,7 @@ menu {
     padding-bottom: 0;
     margin: 0;
     align-items: center;
-    font-size: 15px;
+    font-size: 26px;
     font-style: normal;
     font-weight: 300;
   }
@@ -145,19 +145,15 @@ menu {
     height: 71px;
   }
 }
-@media (min-width: 1200px) {
-  .burger_btns {
-    display: none;
-  }
-  .burger_btns + nav, .burger_btns.active + nav {
-    font-size: 20px;
-  }
-}
 header {
   background-color: #DF803E;
   padding-bottom: 40px;
   margin-bottom: 40px;
   position: relative;
+}
+header .container {
+  display: flex;
+  flex-wrap: wrap;
 }
 header .container h1 {
   margin-top: 32px;
@@ -168,6 +164,7 @@ header .container p {
   font-style: normal;
   font-weight: 300;
   line-height: 110%;
+  max-width: 600px;
 }
 header .container .btn-popup {
   padding: 10px 16px;
@@ -176,36 +173,27 @@ header .container .btn-popup {
   margin: 16px auto;
   display: block;
 }
-header .camel {
+header .container .camel {
   height: 195px;
   width: 140px;
   background-image: url(../images/pict.png);
   background-repeat: no-repeat;
-  background-position: bottom center;
-  background-size: 140px 195px;
-  margin: 0 auto;
-  z-index: 0;
-}
-header::after {
-  content: "";
-  position: absolute;
-  transform: translateX(-50%);
-  margin-bottom: 50px;
-  bottom: -70px;
-  left: 50%;
-  width: 51px;
-  height: 0;
-  border-left: 160px solid transparent;
-  border-right: 150px solid transparent;
-  border-bottom: 250px solid rgb(255, 255, 255);
-  z-index: -1;
+  background-size: contain;
+  margin: auto;
+  align-items: center;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   header {
     padding-bottom: 40px;
     margin-bottom: 40px;
     position: relative;
+  }
+  header .container {
+    display: flex;
+  }
+  header .container > div {
+    max-width: 875px;
   }
   header .container h1 {
     margin-top: 200px;
@@ -225,29 +213,12 @@ header::after {
     margin: 16px auto;
     display: block;
   }
-  header .camel {
-    height: 195px;
-    width: 140px;
-    background-image: url(../images/pict.png);
-    background-repeat: no-repeat;
-    background-position: bottom center;
-    background-size: 140px 195px;
-    margin: 0 auto;
-    z-index: 0;
-  }
-  header::after {
-    content: "";
-    position: absolute;
-    transform: translateX(-50%);
-    margin-bottom: 50px;
-    bottom: -70px;
-    left: 50%;
-    width: 51px;
-    height: 0;
-    border-left: 160px solid transparent;
-    border-right: 150px solid transparent;
-    border-bottom: 250px solid rgb(255, 255, 255);
-    z-index: -1;
+  header .container .camel {
+    height: 761px;
+    width: 539px;
+    align-items: center;
+    justify-content: space-between;
+    background-size: contain;
   }
 }
 .direction_works {
