@@ -1,4 +1,4 @@
-menu {
+.menu {
     background-color: $backgroundPrimary;
     border-bottom: 1px solid #FFF;
 }
@@ -44,7 +44,7 @@ menu {
 
     }
 
-    & + nav {
+    &+nav {
         display: none;
         background-image: url(../images/pict.png);
         background-repeat: no-repeat;
@@ -82,7 +82,7 @@ menu {
     .burger_btns {
         display: none;
 
-        & + nav,
+        &+nav,
         &.active+nav {
             display: flex;
             justify-content: center;
@@ -125,10 +125,11 @@ menu {
 
     }
 
-    menu .container {
+    .menu 
+        & .container {
         display: flex;
         justify-content: space-between;
         height: 71px;
     }
-  
+
 }

@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const burger_btns = document.querySelector('.burger_btns');
     const btnMobileMenuOpen = document.querySelector('.open-menu');
     const btnMobileMenuClose = document.querySelector('.close-menu');
-    const menu = document.querySelector('menu');
+    const menu = document.querySelector('.menu');
     const logo = document.querySelector('.logo');
 
     btnMobileMenuOpen.addEventListener('click', function () {
